@@ -66,52 +66,26 @@ p {
     font-size: 1.1rem;
 }
 
-/* Sprint Sections */
-.sprint-section {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background-color: #f8f9fa;
-    border-radius: 6px;
-    border-left: 5px solid #3498db;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+.all-bios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
 }
 
-.sprint-section h3 {
-    margin-top: 0;
-    color: #2c3e50;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 300px;
+    align-items: center;
+    text-align: center;
 }
 
-.sprint-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sprint-section li {
-    margin-bottom: 0.8rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.sprint-section li::before {
-    content: "📄";
-    position: absolute;
-    left: 0;
-    top: 2px;
-}
-
-.sprint-section a {
-    color: #2980b9;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.sprint-section a:hover {
-    color: #e74c3c;
-    text-decoration: underline;
+.bio-pics {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 footer {
