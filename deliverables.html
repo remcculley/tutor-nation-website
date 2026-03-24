@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,7 +23,7 @@
       </p>
 
       <section class="sprint-section">
-        <h3>Sprint 1 / Preliminary Phase</h3>
+      <h3>Sprint 1 / Preliminary Phase </h3>
         <ul>
           <li>
             <a
@@ -76,12 +76,188 @@
           </li>
         </ul>
       </section>
-
-      <!-- Future sprints will be added here -->
+      
+ 
+       Future sprints will be added here 
     </main>
 
     <footer>
       <p>&copy; CS495 Tutor Nation Project</p>
     </footer>
+  </body>
+</html> 
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Website | Deliverables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="deliverables.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Deliverables</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="deliverables.html">Deliverables</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Project Deliverables</h2>
+      <p>
+        Repository for all presentations and delivered documents for each
+        sprint.
+      </p>
+
+      <!-- Sprint 1 -->
+      <section class="sprint-section-drop">
+        <h3 class="dropdown-header">Sprint 1 / Preliminary Phase</h3>
+        <div class="dropdown-content">
+          <ul>
+            <li>
+              <a
+                href="deliverables/Tutor_Nation_Project_Pitch_Presentation.pdf"
+                
+              >
+                Preliminary Presentation
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/Sprint1DailyJournal.pdf"
+                
+              >
+                Sprint 1 Daily Journal
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/Sprint1GoalBacklog.pdf"
+             
+              >
+                Sprint 1 Goal Backlog
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/Sprint1Retrospective.pdf"
+               
+              >
+                Sprint 1 Retrospective
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/ProjectBacklogSprint1.pdf"
+               
+              >
+                Project Backlog
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/TutorNationSprint1Presentation.pdf"
+                
+              >
+                Sprint 1 Presentation
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/Sprint1Commits.png"
+                
+              >
+                Sprint 1 Commits
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Sprint 2-->
+
+     <section class="sprint-section">
+        <h3>Sprint 2</h3>
+          <ul>
+            <li>
+              <a
+                href="deliverables/Sprint2DailyJournal.pdf"
+                
+              >
+                Sprint 2 Daily Journal
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/Sprint2GoalBacklog.pdf"
+               
+              >
+                Sprint 2 Goal Backlog
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/Sprint2Retrospective.pdf"
+               
+              >
+                Sprint 2 Retrospective
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/Sprint2ProjectBacklog.pdf"
+                
+              >
+                Project Backlog
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/TutorNation_Sprint_Presentation_2.pptx"
+                
+              >
+                Sprint 2 Presentation
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/Sprint2CommitsMain.png"
+              
+              >
+                Sprint 2 Commits Main Branch
+              </a>
+            </li>
+            <li>
+              <a
+                href="deliverables/Sprint2CommitsConsistency.png"
+                
+              >
+                Sprint 2 Commits Consistency Between Views
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; CS495 Tutor Nation Project</p>
+    </footer>
+
+    <script>
+      const dropdownHeaders = document.querySelectorAll(".dropdown-header");
+
+      dropdownHeaders.forEach((header) => {
+        header.addEventListener("click", () => {
+          header.classList.toggle("active");
+          const content = header.nextElementSibling;
+          content.classList.toggle("show");
+        });
+      });
+    </script>
   </body>
 </html>

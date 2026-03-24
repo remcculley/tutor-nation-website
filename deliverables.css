@@ -1,4 +1,4 @@
-/* deliverables.css */
+/*deliverables.css*/
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -66,8 +66,26 @@ p {
     font-size: 1.1rem;
 }
 
-/* Sprint Sections */
-.sprint-section {
+/* Sprint Sections */ 
+
+
+.sprint-section { 
+    margin-top: 2rem; 
+    padding: 1.5rem; 
+    background-color: #f8f9fa; 
+    border-radius: 6px; 
+    border-left: 5px solid #3498db; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+}
+
+.sprint-section h3 { 
+    margin-top: 0; 
+    color: #2c3e50; 
+    font-size: 1.3rem; 
+    margin-bottom: 1rem; 
+}
+
+.sprint-section-drop {
     margin-top: 2rem;
     padding: 1.5rem;
     background-color: #f8f9fa;
@@ -76,11 +94,41 @@ p {
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.sprint-section h3 {
-    margin-top: 0;
+.dropdown-header {
+    margin: 0;
     color: #2c3e50;
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 25px;
+}
+
+.dropdown-header::after {
+    content: "▼";
+    position: absolute;
+    right: 0;
+    transition: transform 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.dropdown-header.active::after {
+    transform: rotate(-180deg);
+}
+
+.dropdown-content {
+    display: none;
+    margin-top: 1rem;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.sprint-section-drop ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .sprint-section ul {
@@ -95,7 +143,20 @@ p {
     position: relative;
 }
 
+.sprint-section-drop li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
 .sprint-section li::before {
+    content: "📄";
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.sprint-section-drop li::before {
     content: "📄";
     position: absolute;
     left: 0;
@@ -109,7 +170,19 @@ p {
     transition: color 0.2s;
 }
 
+.sprint-section-drop a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
 .sprint-section a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.sprint-section-drop a:hover {
     color: #e74c3c;
     text-decoration: underline;
 }
