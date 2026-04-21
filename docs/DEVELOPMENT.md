@@ -40,16 +40,26 @@ The backend dependencies as found in the `pom.xml` files are as follows:
 - spring-boot-starter-webservices
 - spring-boot-starter-webservices-test
 
+As displayed in Xcode, our Swift frontend features the following package dependencies:
+- AppAuth
+- AppCheck
+- GoogleSignIn
+- GoogleUtilities
+- GTMAppAuth
+- GTMSessionFetcher
+- Promises
+Important to note, however, is that most of these are bundled with SwiftUI and Xcode and do not need to be installed separately.
 ### Building and Running
 From top to bottom, to build and run our app you should do the following:
 - From the `TutorNation_Backend` folder, run the command `docker compose up --build` to start the local backend and database.
 - Open Xcode using the `TutorNation.xcodeproj` file after cloning the repo.
 - Select a simulator compatible with iOS target version 18+ and click the Run button in the toolbar or Product -> Run.
+There is currently no CI/CD in our project repo to automate testing, building, deploying, etc. upon new pushes.  
 
 ## Future Work
 
 ### Backlog
-Our project backlog can be found at this address. To summarize the major work on this project, we implmeneted the frontend for three key views in the app. 
+Our project backlog can be found at this address: https://docs.google.com/spreadsheets/d/1kzH4bF73NjxGUCLfPma1TS0EfhSvhRkDbukiUE--2WY/edit?usp=sharing. To summarize the major work on this project, we implmeneted the frontend for three key views in the app. While we currently do not have an active buglist, our most recent cyber vulnerability assessment is viewable on our website. 
 
 ### In Progress Work
 First is the student view, where students can view their assigned activities, their upcoming tutoring sessions, as well as their profile. This view is successfully connected to our backend so the data being populated is coming from our AWS RDS database hosted on AWS EC2. In addition, clicking a lesson shows an example activity we have implemented on the frontend that a student can click through. The end goal is to have these lessons be AI generated according to a what subject and topic the student is studying, and what interests they have listed in their profile. So a major step in the student view would be AI integration with a major LLMs API at activity-opening time, allowing generation of unique, personalized lesson content. 
@@ -80,3 +90,7 @@ As far as work to be done that hasn't been started, our sponsors were very conce
 - **Column naming** uses `snake_case` throughout (e.g., `first_name`, `created_at`, `password_hash`).
 
 ## Testing
+There are two relevant files to testing this program. First, our plan for testing can be find in the `TESTPLAN.md` file detailing everything from the purpose and scope of our testing, to the pass/fail guidelines and test deliverables.
+
+Along with the `TESTPLAN.md` file, we also include the `TESTCASES.md` file. Provided in this file is a suite of test cases ensuring the proper functioning of the API, authentication, role selection, onboarding, and just about every other feature of the app related to interfacing with the backend and database. To test this app, follow the cases outlined in the `TESTCASES.md` file ensuring the correct preconditions are met and the steps involved in the test are properly followed. 
+
